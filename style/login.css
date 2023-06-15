@@ -62,9 +62,10 @@ input{
     border-left:1px solid rgba(23, 24, 24, 0.897) ;
     font-family: Lato;
     font-size: 16px;
+    outline: none;
+    padding-left: 10px;
 }
-input :focus-visible{
-}
+
  button{
      background: #24aeb1;
     font-family:'Lato';
