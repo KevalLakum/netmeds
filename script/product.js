@@ -355,5 +355,41 @@ let product = [
         Mkt: " Hamdard Laboratories India Pvt Ltd",
         BestPrice: "195.50",
         Mrp: "230.00"
-    },
+    }
 ]
+ 
+
+let ui=(product)=>{
+
+
+product.map((Element)=>{
+    // console.log(Element);
+    let img = document.createElement("img");
+    img.src= Element.Image;
+    let name = document.createElement("h3");
+    name.innerHTML = Element.Name;
+    let mkt = document.createElement("p");
+    mkt.innerHTML = Element.Mkt;
+
+    // console.log(img,name,mkt);
+    let bestprice = document.createElement("h5")
+    bestprice.innerHTML = Element.BestPrice;
+    let mrp = document.createElement("h6")
+    mrp.innerHTML = Element.Mrp;
+    let btn = document.createElement("button")
+    btn.innerHTML = "Add to cart";
+    // console.log(bestprice,mrp,btn);
+   
+    //     localStorage.setItem("product", JSON.stringify(product));
+
+    //     // console.log(product);
+
+    let div = document.createElement("div");
+div.append(img,name,mkt,bestprice,mrp,btn);
+    console.log(div);
+    document.querySelector(".box-2").append(div);
+});
+
+}
+ui(product)
+
