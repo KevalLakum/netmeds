@@ -357,39 +357,52 @@ let product = [
         Mrp: "230.00"
     }
 ]
- 
 
-let ui=(product)=>{
+let proui = ``
+let ui = (product) => {
 
 
-product.map((Element)=>{
-    // console.log(Element);
-    let img = document.createElement("img");
-    img.src= Element.Image;
-    let name = document.createElement("h3");
-    name.innerHTML = Element.Name;
-    let mkt = document.createElement("p");
-    mkt.innerHTML = Element.Mkt;
+    product.map((Element) => {
+        //     // console.log(Element);
+        //     let img = document.createElement("img");
+        //     img.src= Element.Image;
+        //     let name = document.createElement("h3");
+        //     name.innerHTML = Element.Name;
+        //     let mkt = document.createElement("p");
+        //     mkt.innerHTML = Element.Mkt;
 
-    // console.log(img,name,mkt);
-    let bestprice = document.createElement("h5")
-    bestprice.innerHTML = Element.BestPrice;
-    let mrp = document.createElement("h6")
-    mrp.innerHTML = Element.Mrp;
-    let btn = document.createElement("button")
-    btn.innerHTML = "Add to cart";
-    // console.log(bestprice,mrp,btn);
-   
-    //     localStorage.setItem("product", JSON.stringify(product));
+        //     // console.log(img,name,mkt);
+        //     let bestprice = document.createElement("h5")
+        //     bestprice.innerHTML = Element.BestPrice;
+        //     let mrp = document.createElement("h6")
+        //     mrp.innerHTML = Element.Mrp;
+        //     let btn = document.createElement("button")
+        //     btn.innerHTML = "Add to cart";
+        //     // console.log(bestprice,mrp,btn);
 
-    //     // console.log(product);
+        //     //     localStorage.setItem("product", JSON.stringify(product));
 
-    let div = document.createElement("div");
-div.append(img,name,mkt,bestprice,mrp,btn);
-    console.log(div);
-    document.querySelector(".box-2").append(div);
-});
+        //     //     // console.log(product);
+
+        //     let div = document.createElement("div");
+        // div.append(img,name,mkt,bestprice,mrp,btn);
+        //     console.log(div);
+        //     document.querySelector(".box-2").append(div);
+        proui += `
+<div class="product">
+                <div class="product-box">
+                    <img src="${Element.Image}"
+                        alt="">
+                    <h3>${Element.Name}</h3>
+                    <p><span>Ayush <span>Ayurvedic</span></span></p>
+                    <p>Mkt: ${Element.Mkt}</p>
+                    <h5>Best price* <span>${Element.BestPrice}</span></h5>
+                    <h6>MRP <span> ${Element.Mrp}</span></h6>
+                    <button id="btn">ADD TO CART</button>
+                </div>
+     </div>`
+    });
 
 }
 ui(product)
-
+document.querySelector(".box-2").innerHTML = proui
