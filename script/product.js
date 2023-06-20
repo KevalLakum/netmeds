@@ -1,3 +1,8 @@
+import navbar from "../components/navbar.js";
+
+document.getElementById("nav").innerHTML=navbar()
+
+
 let product = [
     {
         Image: "https://www.netmeds.com/images/product-v1/600x600/15917/dabur_pudin_hara_pearls_capsule_10_s_0.jpg",

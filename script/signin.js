@@ -1,3 +1,9 @@
+import navbar from "../components/navbar.js";
+
+document.getElementById("nav").innerHTML=navbar()
+
+
+
 document.querySelector("form").addEventListener("submit", function (e) {
     e.preventDefault();
 
