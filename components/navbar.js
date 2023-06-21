@@ -17,16 +17,16 @@ return (`<header>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="./pages/product.html"> <img src="../images/upload_rx.svg" alt="">  upload</a>
+                    <a class="nav-link " aria-current="page" href="../pages/product.html"> <img src="../images/upload_rx.svg" alt="">  upload</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="./pages/login.html"> <img src="../images/offers_icon.svg" alt="">  offers</a>
+                    <a class="nav-link " aria-current="page" href="../pages/login.html"> <img src="../images/offers_icon.svg" alt="">  offers</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="./pages/cart.html"> <img src="../images/cart_icon.svg" alt="">  cart</a>
+                    <a class="nav-link " aria-current="page" href="../pages/cart.html"> <img src="../images/cart_icon.svg" alt="">  cart</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./pages/signin.html"> <img src="../images/profile_icon.svg" alt="">  sign in / sign up</a>
+                    <a class="nav-link" href="../pages/signin.html"> <img src="../images/profile_icon.svg" alt="">  sign in / sign up</a>
                 </li>
 
 
