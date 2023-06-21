@@ -388,6 +388,7 @@ let ui = (product) => {
         // div.append(img,name,mkt,bestprice,mrp,btn);
         //     console.log(div);
         //     document.querySelector(".box-2").append(div);
+
         proui += `
 <div class="product">
                 <div class="product-box">
@@ -406,3 +407,8 @@ let ui = (product) => {
 }
 ui(product)
 document.querySelector(".box-2").innerHTML = proui
+
+function cart(product) {
+    console.log(product);
+
+}
