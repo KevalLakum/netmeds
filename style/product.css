@@ -7,16 +7,16 @@
 }
 .product-box img{
     width: 200px;
-    height: auto;
+    height: 200px;
 }
 .product{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
     margin: auto;
 }
 .product-box{
     width: 280px;
+    height: 450px;
     border: 1px solid #6F7284;
     padding: 30px;
     box-shadow: 0px 0px 10px;
@@ -112,9 +112,13 @@
     height:100vh;
     border: 1px solid black;
     overflow: auto;
+    padding: 25px;
 }
 #parent_div{
    display: flex;
+}
+#parent_div .box-1{
+    overflow: auto;
 }
 .box-1 h1{
     font-size: 25px;
