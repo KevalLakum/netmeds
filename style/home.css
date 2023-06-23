@@ -139,6 +139,28 @@ header{
     padding-right: 20px;
 }
 
+
+ .explorer-menu {
+    height: 56px;
+    max-width: 1030px;
+    margin: 0px auto;
+    box-sizing: border-box;
+    padding: 0px 10px;
+    ;
+}
+.explorer-menu a, ul{
+    list-style: none;
+    text-decoration: none;
+    justify-content: space-between;
+}
+.explorer-menu a span{
+margin-left: 20px;    
+}
+
+
+
+
+
 /* footer section css */
 /*---footer-*/
 

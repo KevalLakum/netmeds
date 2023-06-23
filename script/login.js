@@ -1,6 +1,5 @@
 import navbar from "../components/navbar.js";
 
-document.getElementById("nav").innerHTML=navbar()
 
 
 document.querySelector("form").addEventListener("submit", function (event) {
@@ -16,14 +15,29 @@ document.querySelector("form").addEventListener("submit", function (event) {
 
     if (email == user.email && password == user.password) {
         alert("login successful")
+        localStorage.setItem("loggedin", true);
+        window.location.href="/index.html"
 
     }
     else if (email == user.email && password !== user.password) {
         alert("please enter your current password");
     }
-    
-    else {
-        alert("please enter your current email address")
+    else if(email !== user.email && password == user.password) {
+        alert("please enter your current Email");
     }
+    
+    // else {
+    //     alert("please enter your current email address")
+    // }
+if(email !== user.email && password !==user.password){
+    alert("invalid Login please try again")
+    localStorage.setItem("invalid" , false);
+    window.location.href="./signin.html"
+
+    
+}
 
 })
+
+
+document.getElementById("nav").innerHTML=navbar()

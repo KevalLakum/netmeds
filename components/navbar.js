@@ -4,7 +4,8 @@ return (`<header>
  <div class="container">
 <nav class="navbar navbar-expand-lg ">
     <div class="container-fluid">
-        <img src="../images/logo.svg" class="img" alt="">
+    <a href="/index.html"><img src="../images/logo.svg" class="img" alt="" href="#">
+    </a>
        
         <form class="d-flex " role="search" >
             <input  class="form-control me-2" type="search" placeholder="Search for medicine & wellness products…" aria-label="Search">
