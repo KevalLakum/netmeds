@@ -120,6 +120,47 @@ input:last-child{
 .login-policy p span{
     color: #ef4281;
 }
+@media (max-width: 600px) {
+    .img-box img{
+        display:none;
+    }
+    .sign-in{
+        width: 100%;
+        height: 580px;
+        margin: auto;
+    }
+    .content-box{
+        width: 100%;
+    
+    }
+    .content-box h1{
+        font-size: 25px;
 
+    }
+    .content-box p{
+        font-size: 14px;
+        padding-right: 20px;
+        width: 320px;
+    }
+    
+    input{
+        width: 250px;
+        display: block;
+    }
+    .social-icon{
+        display: block;    
 
+    }
+    .social-icon button{
+        width: 250px;
+        display:block;  
+    }
+    .social-icon .google,.facebook{
+        margin:10px 0;
+    }
+    .login-policy p{
+text-align: center;
+}
+
+}
 
