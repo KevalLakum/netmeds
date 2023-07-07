@@ -77,8 +77,12 @@ object-fit: cover;
 /* *---payment offer---*/
 
 .payment-offers {
+    
     overflow-y: hidden;
     overflow-x: hidden;
+}
+.payment-offers h2{
+    padding-top: 50px;
 }
 
 .payment-offers div::-webkit-scrollbar {
@@ -187,6 +191,8 @@ text-align: center;
     padding-top: 60px;
     background-color: rgb(234,241,255);
     padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .footer-top{
